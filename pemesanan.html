@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Barang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            width: 60%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        input[type="text"], input[type="number"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #2c28a7;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #2c28a7;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Pemesanan Barang</h1>
+    </header>
+    <center>
+    <p>anda juga bisa memesan lebih awal di website lalu pasang barang ke bengkel</p>
+</center>
+    <div class="container">
+        <h2>Form Pemesanan Barang</h2>
+
+        <form action="thankyou.html" method="POST">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="no_telepon">No. Telepon</label>
+            <input type="text" id="no_telepon" name="no_telepon" required>
+
+            <label for="barang">Pilih Barang</label>
+            <select id="barang" name="barang" required>
+                <option value="Oli Mesin">Oli Mesin</option>
+                <option value="Kampas Rem">Kampas Rem</option>
+                <option value="Service">Service</option>
+                <option value="Tune Up">Tune Up</option>
+                <option value="Boreup">Boreup</option>
+                <option value="Dyno Test">Dyno Test</option>
+                <option value="Remap Ecu">Remap Ecu</option>
+                <option value="Spion">Spion</option>
+                <option value="Vanbelt">Vanbelt</option>
+            </select>
+
+            <label for="jumlah">Jumlah Pesanan</label>
+            <input type="number" id="jumlah" name="jumlah" min="1" required>
+
+            <button type="submit">Pesan Sekarang  <a href="thankyou.html"></button>
+            <a href="thankyou.html"></a>
+        </form>
+    </div>
+
+</body>
+</html>
